@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SystemViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2rE-pB-jbJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="aKl-VK-giv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNb-su-kfl">
+                                <rect key="frame" x="16" y="412" width="40" height="30"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XY7-Ns-5Bv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfw-cc-9ub">
+                                <rect key="frame" x="310" y="412" width="37" height="30"/>
+                                <state key="normal" title="Email"/>
+                                <connections>
+                                    <action selector="emailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRV-R0-7Ip"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blake-lively-bikini" translatesAutoresizingMaskIntoConstraints="NO" id="YmA-k0-bgy">
+                                <rect key="frame" x="56" y="40" width="263" height="348"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhl-8B-0hc">
+                                <rect key="frame" x="105" y="412" width="40" height="30"/>
+                                <state key="normal" title="Safari"/>
+                                <connections>
+                                    <action selector="safariButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dBf-dP-OEe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRE-6N-vUO">
+                                <rect key="frame" x="202" y="412" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="photosButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hI8-h4-4Q6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aKl-VK-giv" firstAttribute="top" secondItem="cfw-cc-9ub" secondAttribute="bottom" constant="225" id="48u-FU-PWE"/>
+                            <constraint firstItem="YmA-k0-bgy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="4xd-g2-Ern"/>
+                            <constraint firstItem="cfw-cc-9ub" firstAttribute="baseline" secondItem="Hhl-8B-0hc" secondAttribute="baseline" id="Cwo-ly-gVu"/>
+                            <constraint firstItem="cfw-cc-9ub" firstAttribute="baseline" secondItem="cNb-su-kfl" secondAttribute="baseline" id="JIO-Tg-rMK"/>
+                            <constraint firstItem="cfw-cc-9ub" firstAttribute="top" secondItem="YmA-k0-bgy" secondAttribute="bottom" constant="24" id="OHb-kT-WrK"/>
+                            <constraint firstItem="cRE-6N-vUO" firstAttribute="top" secondItem="YmA-k0-bgy" secondAttribute="bottom" constant="24" id="Pw3-ih-p5A"/>
+                            <constraint firstItem="cfw-cc-9ub" firstAttribute="baseline" secondItem="cRE-6N-vUO" secondAttribute="baseline" id="Q1n-Gs-kFA"/>
+                            <constraint firstItem="cNb-su-kfl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S7l-p2-8dj"/>
+                            <constraint firstItem="cfw-cc-9ub" firstAttribute="leading" secondItem="cRE-6N-vUO" secondAttribute="trailing" constant="54" id="VXw-wF-YjI"/>
+                            <constraint firstItem="YmA-k0-bgy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="epH-0p-qIy"/>
+                            <constraint firstItem="Hhl-8B-0hc" firstAttribute="leading" secondItem="cNb-su-kfl" secondAttribute="trailing" constant="49" id="kUn-gG-JTN"/>
+                            <constraint firstItem="YmA-k0-bgy" firstAttribute="top" secondItem="2rE-pB-jbJ" secondAttribute="bottom" constant="20" id="nAI-xn-6i9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cfw-cc-9ub" secondAttribute="trailing" constant="12" id="tqe-dR-neo"/>
+                            <constraint firstItem="cRE-6N-vUO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hhl-8B-0hc" secondAttribute="trailing" constant="8" symbolic="YES" id="tvY-0J-DPa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="YmA-k0-bgy" id="0H9-ib-wKg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.200000000000003" y="19.340329835082461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blake-lively-bikini" width="600" height="800"/>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppEventCount" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="WRX-Cm-NcV">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hm-ah-mxd">
+                                        <rect key="frame" x="20" y="0.0" width="334" height="93"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9t-mY-4BI">
+                                        <rect key="frame" x="20" y="145" width="334" height="93"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5I-2n-7ao">
+                                        <rect key="frame" x="20" y="290" width="334" height="93"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVS-Kr-Riu">
+                                        <rect key="frame" x="20" y="435" width="334" height="93"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJb-2l-5kX">
+                                        <rect key="frame" x="20" y="580" width="334" height="93"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="420-my-EZZ">
+                                        <rect key="frame" x="20" y="725" width="334" height="93"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="420-my-EZZ" secondAttribute="trailing" constant="20" id="0bF-fd-xSB"/>
+                                    <constraint firstAttribute="trailing" secondItem="D9t-mY-4BI" secondAttribute="trailing" constant="20" id="2ss-k2-kkS"/>
+                                    <constraint firstAttribute="trailing" secondItem="O5I-2n-7ao" secondAttribute="trailing" constant="20" id="4Dd-LS-pws"/>
+                                    <constraint firstItem="D9t-mY-4BI" firstAttribute="leading" secondItem="WRX-Cm-NcV" secondAttribute="leading" constant="20" id="7cC-Kh-M8q"/>
+                                    <constraint firstItem="O5I-2n-7ao" firstAttribute="leading" secondItem="WRX-Cm-NcV" secondAttribute="leading" constant="20" id="A59-rH-hdj"/>
+                                    <constraint firstItem="mVS-Kr-Riu" firstAttribute="leading" secondItem="WRX-Cm-NcV" secondAttribute="leading" constant="20" id="GdU-mI-5WM"/>
+                                    <constraint firstAttribute="trailing" secondItem="hJb-2l-5kX" secondAttribute="trailing" constant="20" id="LIV-n6-7Fq"/>
+                                    <constraint firstItem="3Hm-ah-mxd" firstAttribute="leading" secondItem="WRX-Cm-NcV" secondAttribute="leading" constant="20" id="WHq-4O-rlQ"/>
+                                    <constraint firstItem="420-my-EZZ" firstAttribute="leading" secondItem="WRX-Cm-NcV" secondAttribute="leading" constant="20" id="XzB-df-oSa"/>
+                                    <constraint firstItem="hJb-2l-5kX" firstAttribute="leading" secondItem="WRX-Cm-NcV" secondAttribute="leading" constant="20" id="Ze9-P3-1Yu"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Hm-ah-mxd" secondAttribute="trailing" constant="20" id="xAI-Sx-Kxh"/>
+                                    <constraint firstAttribute="trailing" secondItem="mVS-Kr-Riu" secondAttribute="trailing" constant="20" id="z85-43-NGO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WRX-Cm-NcV" secondAttribute="trailing" constant="20" id="2k2-ld-nod"/>
+                            <constraint firstItem="WRX-Cm-NcV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4eU-Wv-mOC"/>
+                            <constraint firstItem="WRX-Cm-NcV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G2O-sr-rHB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WRX-Cm-NcV" secondAttribute="bottom" id="xS9-Ea-fc5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="didBecomeActiveLabel" destination="hJb-2l-5kX" id="mgj-f9-xAp"/>
+                        <outlet property="didEnterBackgroundLabel" destination="O5I-2n-7ao" id="VRH-O0-cdp"/>
+                        <outlet property="didFinishLaunchingLabel" destination="3Hm-ah-mxd" id="uhM-Xj-MrX"/>
+                        <outlet property="willEnterForeground" destination="mVS-Kr-Riu" id="tcM-am-usB"/>
+                        <outlet property="willResignActiveLabel" destination="D9t-mY-4BI" id="ogW-Lu-mkK"/>
+                        <outlet property="willTerminateLabel" destination="420-my-EZZ" id="tt7-up-mcB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>

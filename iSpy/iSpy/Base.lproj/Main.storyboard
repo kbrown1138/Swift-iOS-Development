@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iSpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTk-yc-m52">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blake-lively-bikini" translatesAutoresizingMaskIntoConstraints="NO" id="HAf-8k-SoT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HAf-8k-SoT" firstAttribute="centerX" secondItem="FTk-yc-m52" secondAttribute="centerX" id="EfT-OK-DIU"/>
+                                    <constraint firstItem="HAf-8k-SoT" firstAttribute="leading" secondItem="FTk-yc-m52" secondAttribute="leading" id="Q5x-M2-lAy"/>
+                                    <constraint firstItem="HAf-8k-SoT" firstAttribute="centerY" secondItem="FTk-yc-m52" secondAttribute="centerY" id="VWZ-HS-KSe"/>
+                                    <constraint firstAttribute="trailing" secondItem="HAf-8k-SoT" secondAttribute="trailing" id="Zuq-aF-t1a"/>
+                                    <constraint firstAttribute="bottom" secondItem="HAf-8k-SoT" secondAttribute="bottom" id="aaF-0j-gmC"/>
+                                    <constraint firstItem="HAf-8k-SoT" firstAttribute="top" secondItem="FTk-yc-m52" secondAttribute="top" id="zcv-ns-Mdu"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IKb-7F-nsn"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FTk-yc-m52" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1pc-El-NBo"/>
+                            <constraint firstItem="FTk-yc-m52" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eES-4u-mv7"/>
+                            <constraint firstItem="FTk-yc-m52" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pgY-7K-PB9"/>
+                            <constraint firstItem="FTk-yc-m52" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zma-E6-zXU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="HAf-8k-SoT" id="kOr-SJ-DVK"/>
+                        <outlet property="scrollView" destination="FTk-yc-m52" id="0c8-yP-t2P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blake-lively-bikini" width="600" height="800"/>
+    </resources>
+</document>
